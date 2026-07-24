@@ -5,8 +5,8 @@
     <title>CodeHub: Clayton's Code collection</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <style>
       body {
         background-color: white;
@@ -19,14 +19,26 @@
       }
       #top {
         background-color: white;
-        
+        border-bottom: 3px solid #b3b3b3;
+        width: 100%;
+        top: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #message {
+        color: #d5d5d5;
+        padding: 2px;
       }
     </style>
   </head>
   <body>
     <div id="top">
       <h1 class="title" id="mainTitle"><strong>CodeHub</strong></h1>
-      <h3>View my code projects on a whim.</h3>
+      <h3 id="message">View my code projects on a whim.</h3>
+    </div>
+    <div id="searchBar">
+
     </div>
   </body>
   <script>
