@@ -73,17 +73,29 @@
   // Search Bar functions
   const searchBar = document.getElementById("searchBar");
   const projects = document.querySelectorAll(".project");
+  const noMatchMessage = document.createElement("h2");
+  noMatchMessage.textContent = "No results matched your search.";
+  document.body.appendChild(noMatchMessage);
+  noMatchMessage.style.display = "none";
   searchBar.addEventListener("input", function(){
     const searchText = searchBar.value.toLowerCase();
+    let foundMatch = false;
     projects.forEach(function(project){
       const projectName = project.textContent.toLowerCase();
       if(projectName.includes(searchText)){
+          foundMatch = true;
           project.style.display = "block";
       }
       else{
           project.style.display = "none";
       }
     });
+    if(foundMatch){
+      noMatchMessage.style.display = "none";
+    }
+    else {
+      noMatchMessage.style.display = "block";
+    }
   });
 </script>
 </html>
