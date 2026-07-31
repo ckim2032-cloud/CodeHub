@@ -51,7 +51,7 @@
     <div id="top">
       <h1 class="title" id="mainTitle"><strong>CodeHub</strong></h1>
       <h2 id="message">View my code projects on a whim.</h2>
-      <input type="text" placeholder="Search for a project. . ." id="searchBar">
+      <input type="text" placeholder="Search for a project. . ." id="searchBar"></input>
         <div class="project">
           PRISM Code Translator
         </div>
@@ -67,7 +67,6 @@
         <div class="project">
           Abigail's Author Page
         </div>
-      </input>
     </div>
   </body>
 <script>
@@ -75,8 +74,8 @@
   const searchBar = document.getElementById("searchBar");
   const projects = document.querySelectorAll(".project");
   searchBar.addEventListener("input", function(){
-    const searchText = searchBar.value;
-    project.forEach(function(project){
+    const searchText = searchBar.value.toLowerCase();
+    projects.forEach(function(project){
       const projectName = project.textContent.toLowerCase();
       if(projectName.includes(searchText)){
           project.style.display = "block";
