@@ -53,9 +53,13 @@
     
         box-sizing: border-box;
       }
+      noMatchMessage {
+        font-family: Geist, Sans-serif;
+        color: #848484;
+      }
       .project {
         margin:15px 0;
-        height: 60px;
+        height: 70px;
         width: 85%;
         border: 2px solid #d7d7d7;
         background-color: #ffffff;
@@ -82,6 +86,7 @@
     <div id="content">
       <div class="project">
         <h3 class="project-title">PRISM Code Translator</h3>
+        <div class="projectOpener"></div>
       </div>
       <div class="project">
         <h3 class="project-title">Gravity Grounds</h3>
@@ -102,6 +107,7 @@
   const searchBar = document.getElementById("searchBar");
   const projects = document.querySelectorAll(".project");
   const noMatchMessage = document.createElement("h2");
+  noMatchMessage.id = "noMatchMessage";
   noMatchMessage.textContent = "No results matched your search.";
   document.body.appendChild(noMatchMessage);
   noMatchMessage.style.display = "none";
