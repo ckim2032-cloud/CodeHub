@@ -112,33 +112,33 @@
       <div class="project">
         <i class="fa-solid fa-code"></i>
         <h3 class="project-title">PRISM Code Translator</h3>
-        <div class="projectOpener">
-            <i class="fa-solid fa-angle-up"></i>
-        </div>
+        <button class="projectOpener">
+            <i class="fa-solid fa-angle-down"></i>
+        </button>
       </div>
       <div class="project">
         <h3 class="project-title">Gravity Grounds</h3>
-        <div class="projectOpener">
-            <i class="fa-solid fa-angle-up"></i>
-        </div>
+        <button class="projectOpener">
+            <i class="fa-solid fa-angle-down"></i>
+        </button>
       </div>
       <div class="project">
         <h3 class="project-title">EP:05:16</h3>
-        <div class="projectOpener">
-            <i class="fa-solid fa-angle-up"></i>
-        </div>
+        <button class="projectOpener">
+            <i class="fa-solid fa-angle-down"></i>
+        </button>
       </div>
       <div class="project">
         <h3 class="project-title">Codehub</h3>
-        <div class="projectOpener">
-            <i class="fa-solid fa-angle-up"></i>
-        </div>
+        <button class="projectOpener">
+            <i class="fa-solid fa-angle-down"></i>
+        </button>
       </div>
       <div class="project">
         <h3 class="project-title">Abigail's Author Page</h3>
-        <div class="projectOpener">
-            <i class="fa-solid fa-angle-up"></i>
-        </div>
+        <button class="projectOpener">
+            <i class="fa-solid fa-angle-down"></i>
+        </button>
       </div>
     </div>
   </body>
@@ -170,6 +170,14 @@
     else {
       noMatchMessage.style.display = "block";
     }
+  });
+  // Project opening Functions
+  const projectOpeners = document.querySelectorAll(".projectOpener");
+
+  projectOpeners.forEach(function(opener) {
+      opener.addEventListener("click", function() {
+          // code here
+      });
   });
 </script>
 </html>
