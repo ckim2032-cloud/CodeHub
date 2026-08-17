@@ -98,6 +98,13 @@
       }
       .projectContent {
         min-height: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .projectImage {
+        height: 250px;
       }
     </style>
   </head>
@@ -116,9 +123,7 @@
             <i class="fa-solid fa-angle-down"></i>
         </button>
         <div class="projectContent">
-          <div class="projectImage">
-            
-          </div>
+          <img class="projectImage" src="images/noImage.png" alt="No images have been uploaded.">
         </div>
       </div>
       <div class="project">
